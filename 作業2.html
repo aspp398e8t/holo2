@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 300px auto;
+            height: 400px;
+            width: 1146px;
+            overflow: hidden;
+        }
+
+        /* .wrap */
+        .wrap {
+            position: relative;
+            width: 10000px;
+            left: 0px;
+            animation: animateImg ease 10s infinite normal;
+        }
+
+
+        .wrap img {
+            width: 1146px;
+            float: left;
+            height: 400px;
+            display: block;
+        }
+
+
+        @keyframes animateImg {
+            0% {
+                left: 0px;
+            }
+
+            20% {
+                left: -0px;
+            }
+
+            40% {
+                left: -1146px;
+            }
+
+            60% {
+                left: -2292px;
+            }
+
+            80% {
+                left: -3438px;
+            }
+
+            100% {
+                left: 0px;
+            }
+        }
+
+        .music {
+            position: relative;
+
+        }
+
+        .star {
+            position: absolute;
+            transform: rotate(50, 50);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap">
+            <img src="./holo/H0xIW7M.png" alt="" />
+            <img src="./holo/maxresdefault.jpg" alt="" />
+            <img src="./holo/miko1.jpg" alt="" />
+            <img src="./holo/miko2.jpg" alt="" />
+        </div>
+    </div>
+    <div class="music">
+        <div class="star">
+            <audio controls>
+                <source src="./holo/Holidays!／角巻わため【original】.mp3" type="audio/mpeg">
+            </audio>
+
+        </div>
+    </div>
+</body>
+
+</html>
